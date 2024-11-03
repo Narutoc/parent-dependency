@@ -28,7 +28,7 @@
         <commons.collections4.version>4.4</commons.collections4.version>
         <commons.io.version>2.17.0</commons.io.version>
 
-        <mybatis.plus.version>3.5.8</mybatis.plus.version>
+        <mybatis.plus.version>3.5.9</mybatis.plus.version>
         <dynamic.datasource.version>4.3.1</dynamic.datasource.version>
         <sqlserver.version>12.8.1.jre11</sqlserver.version>
         <mysql.version>8.0.33</mysql.version>
@@ -44,6 +44,14 @@
         <java.jwt.version>4.4.0</java.jwt.version>
 
         <springdoc.version>1.8.0</springdoc.version>
+        <spring.core.version>6.1.14</spring.core.version>
+
+        <javax.annotation.version>1.3.2</javax.annotation.version>
+        <jaxb.api.version>2.3.1</jaxb.api.version>
+        <httpcore.version>4.4.16</httpcore.version>
+        <httpclient.version>4.5.14</httpclient.version>
+        <redisson.version>3.38.1</redisson.version>
+        <javax.servlet.version>4.0.1</javax.servlet.version>
     </properties>
 
     <dependencyManagement>
@@ -165,7 +173,7 @@
             <!--数据库相关依赖-->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
                 <version>${mybatis.plus.version}</version>
             </dependency>
 
@@ -246,6 +254,50 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-data-rest</artifactId>
                 <version>${springdoc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>${jaxb.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${httpcore.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet.version}</version>
+            </dependency>
+            <!--redisson依赖-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
