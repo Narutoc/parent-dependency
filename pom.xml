@@ -28,7 +28,7 @@
         <commons.collections4.version>4.4</commons.collections4.version>
         <commons.io.version>2.17.0</commons.io.version>
 
-        <mybatis.plus.version>3.5.9</mybatis.plus.version>
+        <mybatis.plus.version>3.5.6</mybatis.plus.version>
         <dynamic.datasource.version>4.3.1</dynamic.datasource.version>
         <sqlserver.version>12.8.1.jre11</sqlserver.version>
         <mysql.version>8.0.33</mysql.version>
